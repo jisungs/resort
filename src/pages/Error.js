@@ -1,9 +1,16 @@
-import React from 'react'
+import React from 'react';
+import Hero from '../components/Hero';
+import Banner from '../components/Banner';
+import {Link} from 'react-router-dom';
 
 export default function Error() {
     return (
-        <div>
-            hello from error page
-        </div>
+        <Hero>
+            <Banner title="luxurious rooms" subtitle="deluxe room starting at $100">
+                <Link to="/" className="btn-primary">
+                    return home
+                </Link>
+            </Banner>
+        </Hero>
     )
 }
